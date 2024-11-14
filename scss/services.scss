@@ -1,0 +1,215 @@
+.container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.initial_cap h1{
+    color: #725A58;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+
+}
+
+.initial_cap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.horizontal-line{
+    display: inline-block;
+    border-bottom: 2px solid #E3B6B1;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 200px;
+}
+
+.initial_cap p {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.content-container{
+    background-color: #FAE9E7;
+}
+
+.wedding-girl{
+    // width: 100vw;
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+}
+
+.generaltext1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 0;
+}
+
+.generaltext1 h2{
+    color: #725A58;
+    font-size: 36px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+.details-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.price img{
+    height: 22px;
+}
+
+.price h4{
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 3.5px;
+}
+
+.clock-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.clock-text h4{
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+.clock-text2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+.clock-text2 h4{
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+.informative{
+    text-align: start;
+}
+
+.informative h3{
+    font-size: 24px;
+    color: #191919;
+    margin: 30px 0px 20px;
+}
+
+.informative p{
+    font-size: 19px;
+}
+
+.align-button{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+button{
+    width: 340px;
+    height: 54px;
+}
+
+
+@media (min-width:960px) {
+    .initial_cap h1{
+        font-size: 80px;
+        letter-spacing: 18px;
+    }    
+
+    .horizontal-line{
+        margin: 15px 0 30px;
+        height: 20px;
+        width: 200px;
+    }
+    
+    .box1{
+        display: flex;
+        justify-content: center;
+        margin: 130px 150px 30px;
+    }
+
+    .box2{
+        display: flex;
+        justify-content: center;
+        margin: 130px 150px 30px;
+    }
+
+    .box3{
+        display: flex;
+        justify-content: center;
+        margin: 130px 150px 30px;
+    }
+
+    .initial_cap p{
+        font-size: 19px;
+        text-align: center;
+        width: 356px;
+        height: 54px;
+    }
+
+    .wedding-girl{
+        width: 390px;
+        height: auto;
+    }
+
+    .generaltext1 h2{
+        font-size: 40px;
+    }
+
+    .details{
+        flex-direction: row;
+    }
+        
+    .clock-text{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 23px;
+    }
+    
+    .clock-text h4{
+        font-weight: 300;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .informative p {
+        width: 664px;
+        font-size: 16px;
+    }
+
+    .align-button{
+        justify-content: flex-start;
+    }
+
+    button {
+        width: 171px;
+        height: 62px;
+    }
+}
