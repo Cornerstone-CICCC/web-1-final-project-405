@@ -1,0 +1,137 @@
+.ph {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    color: #725A58;
+    font-size: 80px;
+    position: relative;
+}
+
+.ph::after {
+    content: '';
+    display: block;
+    width: 250px;
+    /* Ajusta el ancho de la línea */
+    height: 2px;
+    /* Ajusta el grosor de la línea */
+    background-color: #D8B4A0;
+    /* Color de la línea */
+    margin: 0 auto;
+    /* Centra la línea */
+    position: absolute;
+    bottom: -10px;
+    /* Ajusta la posición vertical de la línea */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra la línea horizontalmente */
+}
+
+
+.pt {
+    display: flex;
+    color: #191919;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    justify-content: center; 
+    text-align: center; 
+    flex-wrap: wrap;
+}
+
+.portfolio {
+    display: flex;
+    width: 100%;
+    top: 448px;
+    background-color: #FAE9E7;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.headings {
+    width: 484px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.headings button {
+border-bottom: 1px solid rgb(0, 0, 0);
+padding: 0 15px;
+padding-bottom: 5px;
+font-size: 32px;
+margin-bottom: 30px;
+margin-top: 55px;
+}
+
+
+.opacity {
+    opacity: 30%;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pictures img {
+width: 335px;
+max-height: 347px;
+object-fit: cover;
+}
+
+#hairstyle {
+    display: none;
+}
+
+.viewMore {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    color: #5a4a48; /* Color del texto */
+    border: 1px solid #725A58; /* Borde del botón */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo y lados) */
+    text-align: center; /* Centra el texto */
+    background-color: #FAE9E7; /* Color de fondo */
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    margin-bottom: 105px;
+}
+
+.viewMore:hover {
+    background-color: #725A58;
+    color: #FAE9E7;
+}
+
+
+@media all and (max-width: 768px) {
+    .pictures{
+    grid-template-columns: 1fr;
+    } 
+
+    .headings button{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .pictures {
+        grid-template-columns: 1fr;
+    }
+    
+    .headings button{
+        width: 100%;
+    }
+    
+    .headings {
+        width: auto;
+    }
+}
