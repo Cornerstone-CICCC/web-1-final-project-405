@@ -1,13 +1,16 @@
 button{
+    font-family: "Baskervville", serif;
     font-size: 20px;
-    // font-family: 'Times New Roman', Times, serif;
     border: 0.8px solid grey;
-    color: grey;
-    background-color: white;
-    padding: 24px 32px;
+    color: #725A58;
+    background-color: transparent;
+    padding: 20px 42.5px;
     transition: all 0.3s ease;
     &:hover{
         background-color: black;
         color: white;
     }
-}
+    &:visited{
+        color:#725A58;
+    }
+  }
