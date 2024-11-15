@@ -10,7 +10,9 @@ hairstyleBtn.addEventListener("click", () => {
     makeup.style.display = "none"
     hairstyleBtn.classList.remove("opacity")
     makeupBtn.classList.add("opacity")
-
+    makeupBtn.style.opacity = 0.4
+    hairstyleBtn.style.opacity = 1
+    
     //Select the other button and add a class called opacity.
 })
 
@@ -19,4 +21,6 @@ makeupBtn.addEventListener("click", () => {
     hairstyle.style.display = "none"
     makeupBtn.classList.remove("opacity")
     hairstyleBtn.classList.add("opacity")
+    hairstyleBtn.style.opacity = 0.4
+    makeupBtn.style.opacity = 1
 })
