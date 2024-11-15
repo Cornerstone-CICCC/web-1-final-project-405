@@ -1,5 +1,8 @@
-
 @use './portfolio';
+@use './services.scss';
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique&display=swap');
 * {
@@ -94,3 +97,20 @@ button{
     font-weight: 400;
     font-style: normal;
 }
+
+button{
+    font-family: "Baskervville", serif;
+    font-size: 20px;
+    border: 0.8px solid grey;
+    color: #725A58;
+    background-color: transparent;
+    padding: 20px 42.5px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+    &:visited{
+        color:#725A58;
+    }
+  }
