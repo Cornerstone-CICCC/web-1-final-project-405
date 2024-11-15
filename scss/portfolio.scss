@@ -56,9 +56,13 @@
     padding-bottom: 5px;
 }
 
-button {
+.headings button {
     all: unset;
     cursor: pointer;
+}
+
+.headings button:last-child {
+    opacity: 0.4;
 }
 
 .headings button {
@@ -92,25 +96,13 @@ object-fit: cover;
 }
 
 .viewMore {
-    all: unset;
-    cursor: pointer;
     display: inline-block;
-    font-size: 20px;
-    color: #5a4a48; /* Color del texto */
-    border: 1px solid #725A58; /* Borde del botón */
     padding: 10px 20px; /* Espaciado interno (arriba/abajo y lados) */
     text-align: center; /* Centra el texto */
-    background-color: #FAE9E7; /* Color de fondo */
     transition: all 0.3s ease;
     margin-top: 25px;
     margin-bottom: 105px;
 }
-
-.viewMore:hover {
-    background-color: #725A58;
-    color: #FAE9E7;
-}
-
 
 @media all and (max-width: 768px) {
     .pictures{
