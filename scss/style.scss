@@ -1,9 +1,14 @@
-
+@use './portfolio';
+@use './services.scss';
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
-@import url('./services.scss');
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique&display=swap');
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -35,11 +40,6 @@
 body {
     background-color: #F8F6F4;
 
-}
-
-.container{
-background-color: aqua;
-height: 100px;
 }
 
 .links1 a{
@@ -97,3 +97,20 @@ button{
     font-weight: 400;
     font-style: normal;
 }
+
+button{
+    font-family: "Baskervville", serif;
+    font-size: 20px;
+    border: 0.8px solid grey;
+    color: #725A58;
+    background-color: transparent;
+    padding: 20px 42.5px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+    &:visited{
+        color:#725A58;
+    }
+  }
