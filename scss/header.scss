@@ -64,7 +64,8 @@
 @media (max-width: 720px) {
 
   header{
-    position: fixed;
+    position: sticky;
+    top: 0;  
   }
     .Mobile_Responsive-header{
         display: block;
