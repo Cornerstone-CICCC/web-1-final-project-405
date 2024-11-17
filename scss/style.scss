@@ -1,19 +1,28 @@
-@use "./portfolio";
-@use "./services.scss";
-@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
 
 * {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
-@media all and (min-width: 540px) {
-  .container {
-    width: 420px;
-    max-width: 100%;
-    margin: auto;
-  }
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 420px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.row {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media all and (min-width: 720px) {
@@ -88,21 +97,17 @@ h5 {
 
 button {
   font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-button {
-  font-family: "Baskervville", serif;
-  font-size: 20px;
-  border: 0.8px solid grey;
-  color: #725a58;
+  font-size: 18px;
+  border: 0.8px solid #5e4a49;
+  color: #5e4a49;
   background-color: transparent;
   padding: 20px 42.5px;
   transition: all 0.3s ease;
+  min-width: 160px;
   &:hover {
-    background-color: black;
+    background-color: #b99692;
     color: white;
+    cursor: pointer;
   }
   &:visited {
     color: #725a58;
@@ -416,5 +421,123 @@ footer span {
 
   .nav-container input[type="checkbox"]:checked ~ .logo {
     display: none;
+  }
+}
+.whisper-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-pink-400 {
+  background-color: #f8f6f4;
+}
+
+figure {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e3b6b1;
+    z-index: -1;
+  }
+  img {
+    margin-top: 0rem;
+    width: 100%;
+    border: 1px solid #e3b6b1;
+  }
+  figcaption {
+    background-color: #fff;
+    border: 0.5px solid #888888;
+    padding: 22px 26px;
+    margin-top: -0.5rem;
+  }
+}
+
+.figure-simple {
+  position: relative;
+  margin-top: 0;
+  margin-right: 0;
+  &:after {
+    content: none;
+  }
+  img {
+    margin-top: 0rem;
+    width: 100%;
+    border: 1px solid #e3b6b1;
+  }
+  figcaption {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.67) 100%
+    );
+    font-family: "Baskervville", serif;
+    background-color: transparent;
+    position: absolute;
+    bottom: 4px;
+    padding: 0 1rem 10px;
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.line-title {
+  position: relative;
+  font-size: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+  color: #535353;
+  z-index: 1;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 54%;
+    width: 48%;
+    background-color: #888888;
+    height: 1px;
+    content: "\a0";
+    margin-left: 2%;
+    overflow: hidden;
+  }
+  &:before {
+    margin-left: -50%;
+    text-align: right;
+  }
+}
+
+.reviews-slider {
+  &__slide {
+    &--content {
+      text-align: center;
+      &-sign {
+        font-family: "Whisper", cursive;
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 160px;
+    margin-top: -32px;
+    margin-left: auto;
+    margin-right: auto;
+    &--next,
+    &--prev {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
