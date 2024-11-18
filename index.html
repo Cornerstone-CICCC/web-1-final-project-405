@@ -20,6 +20,11 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <!-- jQuery Modal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
   </head>
   <body>
     <main class="home">
@@ -436,81 +441,165 @@
       <section class="edu">
         <h2>DIY Beauty Corner</h2>
         <div class="edu-list">
-          <div class="edu-list__item">
-            <div class="edu-list__item--cover">
-              <img src="/assets/girls/Makeup (12).png" alt="" />
-            </div>
-            <div class="edu-list__item--overlayer">
-              <div class="edu-list__item--title">
-                How to do stunning hair in 3min
+          <div id="eduSlider">
+            <div class="edu-list__item">
+              <div class="edu-list__item--cover">
+                <img src="/assets/girls/Makeup (12).png" alt="" />
               </div>
-              <div class="edu-list__item--btn">
-                <svg
-                  width="61"
-                  height="70"
-                  viewBox="0 0 61 70"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
-                    fill="#F8F6F4"
-                  />
-                </svg>
+              <div class="edu-list__item--overlayer">
+                <div class="edu-list__item--title">
+                  How to do stunning hair in 3min
+                </div>
+                <div class="edu-list__item--btn">
+                  <svg
+                    width="61"
+                    height="70"
+                    viewBox="0 0 61 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                      fill="#F8F6F4"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="edu-list__item">
+              <div class="edu-list__item--cover">
+                <img src="/assets/girls/Makeup (11).png" alt="" />
+              </div>
+              <div class="edu-list__item--overlayer">
+                <div class="edu-list__item--title">
+                  Produce a beautiful bride ✨...
+                </div>
+                <div class="edu-list__item--btn">
+                  <svg
+                    width="61"
+                    height="70"
+                    viewBox="0 0 61 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                      fill="#F8F6F4"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="edu-list__item">
+              <div class="edu-list__item--cover">
+                <img src="/assets/girls/hair (4).png" alt="" />
+              </div>
+              <div class="edu-list__item--overlayer">
+                <div class="edu-list__item--title">
+                  How to do stunning hair in 3min
+                </div>
+                <div class="edu-list__item--btn">
+                  <svg
+                    width="61"
+                    height="70"
+                    viewBox="0 0 61 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                      fill="#F8F6F4"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <div class="edu-list__item">
-            <div class="edu-list__item--cover">
-              <img src="/assets/girls/Makeup (11).png" alt="" />
-            </div>
-            <div class="edu-list__item--overlayer">
-              <div class="edu-list__item--title">
-                Produce a beautiful bride ✨...
+        </div>
+        <div class="edu-list">
+          <div id="eduSliderDesktop">
+            <div class="edu-list__item">
+              <div class="edu-list__item--cover">
+                <img src="/assets/girls/Makeup (12).png" alt="" />
               </div>
-              <div class="edu-list__item--btn">
-                <svg
-                  width="61"
-                  height="70"
-                  viewBox="0 0 61 70"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
-                    fill="#F8F6F4"
-                  />
-                </svg>
+              <div class="edu-list__item--overlayer">
+                <div class="edu-list__item--title">
+                  How to do stunning hair in 3min
+                </div>
+                <div class="edu-list__item--btn">
+                  <svg
+                    width="61"
+                    height="70"
+                    viewBox="0 0 61 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                      fill="#F8F6F4"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="edu-list__item">
-            <div class="edu-list__item--cover">
-              <img src="/assets/girls/hair (4).png" alt="" />
-            </div>
-            <div class="edu-list__item--overlayer">
-              <div class="edu-list__item--title">
-                How to do stunning hair in 3min
+            <div class="edu-list__item">
+              <div class="edu-list__item--cover">
+                <img src="/assets/girls/Makeup (11).png" alt="" />
               </div>
-              <div class="edu-list__item--btn">
-                <svg
-                  width="61"
-                  height="70"
-                  viewBox="0 0 61 70"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
-                    fill="#F8F6F4"
-                  />
-                </svg>
+              <div class="edu-list__item--overlayer">
+                <div class="edu-list__item--title">
+                  Produce a beautiful bride ✨...
+                </div>
+                <div class="edu-list__item--btn">
+                  <svg
+                    width="61"
+                    height="70"
+                    viewBox="0 0 61 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                      fill="#F8F6F4"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="edu-list__item">
+              <div class="edu-list__item--cover">
+                <img src="/assets/girls/hair (4).png" alt="" />
+              </div>
+              <div class="edu-list__item--overlayer">
+                <div class="edu-list__item--title">
+                  How to do stunning hair in 3min
+                </div>
+                <div class="edu-list__item--btn">
+                  <svg
+                    width="61"
+                    height="70"
+                    viewBox="0 0 61 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                      fill="#F8F6F4"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -652,12 +741,24 @@
           </form>
         </div>
       </section>
+
+      <div id="videoModal" class="modal" style="max-width: 100%">
+        <div>
+          <video
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            controls
+            style="width: 100%"
+            poster="https://i.ytimg.com/vi/aqz-KE-bpKQ/maxresdefault.jpg"
+          ></video>
+        </div>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -667,12 +768,26 @@
           nextArrow: "",
           prevArrow: "",
           infinite: true,
+          zIndex: 10,
         });
         $(".reviews-slider__controls--prev").on("click", function () {
           $("#reviewSlider").slick("slickPrev");
         });
         $(".reviews-slider__controls--next").on("click", function () {
           $("#reviewSlider").slick("slickNext");
+        });
+        $("#eduSlider").slick({
+          centerMode: true,
+          centerPadding: "1rem",
+          slidesToShow: 1,
+          arrows: false,
+          zIndex: 10,
+        });
+
+        $(".edu-list__item").on("click", function () {
+          $("#videoModal").modal({
+            fadeDuration: 500,
+          });
         });
       });
     </script>
