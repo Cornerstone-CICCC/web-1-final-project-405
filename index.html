@@ -50,7 +50,7 @@
             <span class="vertical-line"></span>
             <a href="about.html">About</a>
             <span class="vertical-line"></span>
-            <a href="contact.html">Contact</a>
+            <a href="/#contact">Contact</a>
             <span class="vertical-line"></span>
             <img src="assets/icons/insta-header-desk.svg" class="insta-desk" />
           </div>
@@ -81,7 +81,7 @@
                   <li><a href="#">Classes</a></li>
                   <li><a href="#">Beauty Tips</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="/#contact">Contact</a></li>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@
                 <div class="about__main--ctas">
                   <p class="about__main--sign whisper-regular">CarlaBeatriz</p>
                   <div class="about__main--cta">
-                    <a href="#">
+                    <a href="about.html">
                       <button>About Me</button>
                     </a>
                   </div>
@@ -218,7 +218,7 @@
             confidence.
           </p>
           <div class="my-work__cta">
-            <a href="#">
+            <a href="portfolio.html">
               <button>My Work</button>
             </a>
           </div>
@@ -672,7 +672,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Let’s talk</h2>
         <p>
           Check availability, pricing, and schedule a meeting for your special
@@ -749,7 +749,9 @@
                 <label for="eventTime" class="form-label">Event Time</label>
                 <select type="date" name="eventTime" id="eventTime">
                   <option>Full Day</option>
-                  <option>Half Day</option>
+                  <option>9:00am - 3:00pm</option>
+                  <option>3:00pm - 6:00pm</option>
+                  <option>6:00pm - 12:00am</option>
                 </select>
                 <div class="form-checkbox">
                   <input
@@ -866,7 +868,7 @@
           <a href="">Classes</a>
           <a href="">Beauty Tips</a>
           <a href="about.html">About</a>
-          <a href="">Contact</a>
+          <a href="/#contact">Contact</a>
         </div>
         <span class="copyright">Copyright 2024, Carla Beauty</span>
       </div>
@@ -948,7 +950,7 @@
           });
 
           const emailParams = {
-            from_name: "Team 405",
+            from_name: $('input[name="name"]').val(),
             name: $('input[name="name"]').val(),
             email: $('input[name="email"]').val(),
             eventType: $('input[name="eventType"]').val(),
