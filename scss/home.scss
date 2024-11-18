@@ -333,42 +333,91 @@
       }
     }
   }
+
   .classes {
     .container {
       padding: $padding;
       background-color: #fae9e7;
+      width: 1440px;
+      @media screen and (min-width: 768px) {
+        padding: 80px 4rem;
+      }
+      @media screen and (min-width: 960px) {
+        padding: 80px 8rem;
+      }
     }
     h2 {
       font-size: 40px;
       margin-bottom: 48px;
       text-align: center;
       text-transform: uppercase;
+      @media screen and (min-width: 768px) {
+        font-size: 80px;
+      }
     }
     & span {
-      font-size: 40px * 1.5;
+      font-size: 1em * 1.5;
+    }
+    &__wrapper {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 77px;
+      }
     }
     &__list {
       margin-bottom: 40px;
+      width: 100%;
+      max-width: 600px;
       &--item {
         text-align: center;
         margin-bottom: 65px;
+        @media screen and (min-width: 768px) {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+          text-align: left;
+        }
+        &-chevron {
+          display: none;
+          @media screen and (min-width: 768px) {
+            display: flex;
+          }
+        }
         &-title {
           font-size: 32px;
           margin-bottom: 1rem;
           color: #725a58;
+          @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+          }
           &--img {
             margin-bottom: 1.25rem;
+            @media screen and (min-width: 768px) {
+              min-width: 23px;
+              margin-top: -0.25rem;
+              margin-bottom: 0;
+            }
           }
           & span {
-            font-size: 32px * 1.5;
+            font-size: 1em * 1.5;
+            line-height: 0.5em;
           }
         }
         &-text {
           margin-bottom: 1.25rem;
+          @media screen and (min-width: 768px) {
+            max-width: 420px;
+          }
         }
         &-view {
           font-size: 20px;
           color: #5e4a49;
+          @media screen and (min-width: 768px) {
+            display: none;
+          }
           a,
           a:visited {
             color: #5e4a49;
@@ -384,11 +433,17 @@
     &__cta {
       button {
         width: 100%;
+        @media screen and (min-width: 768px) {
+          width: auto;
+        }
       }
     }
     &__instructor {
       margin-left: -1rem;
       margin-right: -1rem;
+      @media screen and (min-width: 768px) {
+        width: 407px;
+      }
       img {
       }
     }
