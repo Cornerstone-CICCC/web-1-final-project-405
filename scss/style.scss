@@ -188,6 +188,21 @@ footer span {
   text-decoration: underline;
 }
 
+ .links-footer{
+        width: 328px;
+        display: flex;
+        flex-direction: row;
+   
+@media screen and (min-width: 768px) {
+  .form-cols {
+    &-2 {
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        width: 46%;
+      }
+
+
 .copyright {
   color: #725a58;
   font-size: 18px;
@@ -572,14 +587,6 @@ input[type="date"] input[type="data"] {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .form-cols {
-    &-2 {
-      display: flex;
-      justify-content: space-between;
-      & > * {
-        width: 46%;
-      }
     }
     &-3 {
       display: flex;
