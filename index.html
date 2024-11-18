@@ -400,6 +400,135 @@
           <button>More Beauty Tips</button>
         </div>
       </section>
+
+      <section class="contact">
+        <h2>Let’s talk</h2>
+        <p>
+          Check availability, pricing, and schedule a meeting for your special
+          day or our academy services.
+        </p>
+        <div class="contact__form-wrapper">
+          <h3>Services</h3>
+          <form>
+            <div class="form-control">
+              <label class="form-label">Event Type</label>
+              <div class="form-radio-list">
+                <input
+                  type="radio"
+                  name="eventType"
+                  id="wedding"
+                  value="Wedding"
+                  required
+                />
+                <label class="form-radio-list__label" for="wedding">
+                  Wedding
+                  <img src="/assets/icons/check.svg" alt="checkmark" />
+                </label>
+              </div>
+              <div class="form-radio-list">
+                <input
+                  type="radio"
+                  name="eventType"
+                  id="party"
+                  value="Party"
+                  required
+                />
+                <label class="form-radio-list__label" for="party">
+                  Party
+                  <img src="/assets/icons/check.svg" alt="checkmark" />
+                </label>
+              </div>
+              <div class="form-radio-list">
+                <input
+                  type="radio"
+                  name="eventType"
+                  id="photoshoot"
+                  value="Photoshoot"
+                  required
+                />
+                <label class="form-radio-list__label" for="photoshoot">
+                  Photoshoot
+                  <img src="/assets/icons/check.svg" alt="checkmark" />
+                </label>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="eventDate" class="form-label">Event Date</label>
+              <input
+                type="date"
+                name="eventDate"
+                id="eventDate"
+                placeholder="Select Date"
+              />
+              <div class="form-checkbox">
+                <input type="checkbox" id="notDecided" name="notDecided" />
+                <label for="notDecided">Not Decided</label>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="eventTime" class="form-label">Event Time</label>
+              <select type="date" name="eventTime" id="eventTime">
+                <option>Full Day</option>
+                <option>Half Day</option>
+              </select>
+              <div class="form-checkbox">
+                <input
+                  type="checkbox"
+                  id="timeNotDecided"
+                  name="timeNotDecided"
+                />
+                <label for="timeNotDecided">Not Decided</label>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-control">
+              <label class="form-label">Contact</label>
+              <div class="form-radio">
+                <input type="radio" name="contact" id="call" value="call" />
+                <label for="call">Call</label>
+                <div class="form-control">
+                  <input type="text" value="" />
+                </div>
+              </div>
+              <div class="form-radio">
+                <input
+                  type="radio"
+                  name="contact"
+                  id="whatsapp"
+                  value="whatsapp"
+                />
+                <label for="whatsapp">Whatsapp</label>
+                <div class="form-control">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="form-radio">
+                <input type="radio" name="contact" id="sms" value="sms" />
+                <label for="sms">SMS</label>
+                <div class="form-control">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="form-radio">
+                <input type="radio" name="contact" id="email" />
+                <label for="email">Email</label>
+                <div class="form-control">
+                  <input type="email" name="email" placeholder="Your Email" />
+                </div>
+              </div>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
     <script
       type="text/javascript"

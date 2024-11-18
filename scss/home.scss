@@ -356,5 +356,35 @@
   }
 
   .contact {
+    padding: $padding;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 40px;
+      color: #725a58;
+      padding: 0 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.2rem;
+      & + p {
+        text-align: center;
+      }
+    }
+    &__form-wrapper {
+      background-color: #fae9e7;
+      margin-top: 2rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding: 40px 1rem;
+      h3 {
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #888888;
+        margin-bottom: 40px;
+      }
+      button {
+        width: 100%;
+      }
+    }
   }
 }
