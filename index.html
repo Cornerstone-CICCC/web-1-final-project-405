@@ -416,6 +416,58 @@
         <div class="edu-list">
           <div class="edu-list__item">
             <div class="edu-list__item--cover">
+              <img src="/assets/girls/Makeup (12).png" alt="" />
+            </div>
+            <div class="edu-list__item--overlayer">
+              <div class="edu-list__item--title">
+                How to do stunning hair in 3min
+              </div>
+              <div class="edu-list__item--btn">
+                <svg
+                  width="61"
+                  height="70"
+                  viewBox="0 0 61 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                    fill="#F8F6F4"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="edu-list__item">
+            <div class="edu-list__item--cover">
+              <img src="/assets/girls/Makeup (11).png" alt="" />
+            </div>
+            <div class="edu-list__item--overlayer">
+              <div class="edu-list__item--title">
+                Produce a beautiful bride ✨...
+              </div>
+              <div class="edu-list__item--btn">
+                <svg
+                  width="61"
+                  height="70"
+                  viewBox="0 0 61 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M60.393 34.9681L0.605469 0.583008V69.4474L60.393 34.9681Z"
+                    fill="#F8F6F4"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="edu-list__item">
+            <div class="edu-list__item--cover">
               <img src="/assets/girls/hair (4).png" alt="" />
             </div>
             <div class="edu-list__item--overlayer">
@@ -457,72 +509,76 @@
           <form>
             <div class="form-control">
               <label class="form-label">Event Type</label>
-              <div class="form-radio-list">
-                <input
-                  type="radio"
-                  name="eventType"
-                  id="wedding"
-                  value="Wedding"
-                  required
-                />
-                <label class="form-radio-list__label" for="wedding">
-                  Wedding
-                  <img src="/assets/icons/check.svg" alt="checkmark" />
-                </label>
-              </div>
-              <div class="form-radio-list">
-                <input
-                  type="radio"
-                  name="eventType"
-                  id="party"
-                  value="Party"
-                  required
-                />
-                <label class="form-radio-list__label" for="party">
-                  Party
-                  <img src="/assets/icons/check.svg" alt="checkmark" />
-                </label>
-              </div>
-              <div class="form-radio-list">
-                <input
-                  type="radio"
-                  name="eventType"
-                  id="photoshoot"
-                  value="Photoshoot"
-                  required
-                />
-                <label class="form-radio-list__label" for="photoshoot">
-                  Photoshoot
-                  <img src="/assets/icons/check.svg" alt="checkmark" />
-                </label>
-              </div>
-            </div>
-            <div class="form-control">
-              <label for="eventDate" class="form-label">Event Date</label>
-              <input
-                type="date"
-                name="eventDate"
-                id="eventDate"
-                placeholder="Select Date"
-              />
-              <div class="form-checkbox">
-                <input type="checkbox" id="notDecided" name="notDecided" />
-                <label for="notDecided">Not Decided</label>
+              <div class="form-cols-3">
+                <div class="form-radio-list">
+                  <input
+                    type="radio"
+                    name="eventType"
+                    id="wedding"
+                    value="Wedding"
+                    required
+                  />
+                  <label class="form-radio-list__label" for="wedding">
+                    Wedding
+                    <img src="/assets/icons/check.svg" alt="checkmark" />
+                  </label>
+                </div>
+                <div class="form-radio-list">
+                  <input
+                    type="radio"
+                    name="eventType"
+                    id="party"
+                    value="Party"
+                    required
+                  />
+                  <label class="form-radio-list__label" for="party">
+                    Party
+                    <img src="/assets/icons/check.svg" alt="checkmark" />
+                  </label>
+                </div>
+                <div class="form-radio-list">
+                  <input
+                    type="radio"
+                    name="eventType"
+                    id="photoshoot"
+                    value="Photoshoot"
+                    required
+                  />
+                  <label class="form-radio-list__label" for="photoshoot">
+                    Photoshoot
+                    <img src="/assets/icons/check.svg" alt="checkmark" />
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="form-control">
-              <label for="eventTime" class="form-label">Event Time</label>
-              <select type="date" name="eventTime" id="eventTime">
-                <option>Full Day</option>
-                <option>Half Day</option>
-              </select>
-              <div class="form-checkbox">
+            <div class="form-cols-2">
+              <div class="form-control">
+                <label for="eventDate" class="form-label">Event Date</label>
                 <input
-                  type="checkbox"
-                  id="timeNotDecided"
-                  name="timeNotDecided"
+                  type="date"
+                  name="eventDate"
+                  id="eventDate"
+                  placeholder="Select Date"
                 />
-                <label for="timeNotDecided">Not Decided</label>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="notDecided" name="notDecided" />
+                  <label for="notDecided">Not Decided</label>
+                </div>
+              </div>
+              <div class="form-control">
+                <label for="eventTime" class="form-label">Event Time</label>
+                <select type="date" name="eventTime" id="eventTime">
+                  <option>Full Day</option>
+                  <option>Half Day</option>
+                </select>
+                <div class="form-checkbox">
+                  <input
+                    type="checkbox"
+                    id="timeNotDecided"
+                    name="timeNotDecided"
+                  />
+                  <label for="timeNotDecided">Not Decided</label>
+                </div>
               </div>
             </div>
             <div class="form-control">
@@ -575,10 +631,10 @@
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   </body>
 </html>
