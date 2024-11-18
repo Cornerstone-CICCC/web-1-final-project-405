@@ -27,6 +27,69 @@
     />
   </head>
   <body>
+    <div id="header">
+      <header>
+        <section class="container-header">
+          <div class="links1">
+            <a href="index.html">Home</a>
+            <span class="vertical-line"></span>
+            <a href="portfolio.html">My Work</a>
+            <span class="vertical-line"></span>
+            <a href="services.html">Services</a>
+            <span class="vertical-line"></span>
+            <a href="">Classes</a>
+          </div>
+          <div class="logo-header">
+            <img src="assets/images/logo.svg" alt="" />
+          </div>
+          <div class="logo-scroll">
+            <img src="assets/images/logo-min.png" alt="" />
+          </div>
+          <div class="links2">
+            <a href="">Beauty Tips</a>
+            <span class="vertical-line"></span>
+            <a href="about.html">About</a>
+            <span class="vertical-line"></span>
+            <a href="contact.html">Contact</a>
+            <span class="vertical-line"></span>
+            <img src="assets/icons/insta-header-desk.svg" class="insta-desk" />
+          </div>
+        </section>
+
+        <section class="Mobile_Responsive-header">
+          <nav>
+            <div class="navbar">
+              <div class="container nav-container">
+                <div>
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>
+                </div>
+                <div class="logo_space">
+                  <img src="assets/images/logo.svg" alt="" class="logo" />
+                  <div class="insta_space">
+                    <img src="assets/icons/instagram.svg" class="insta-mob" />
+                  </div>
+                </div>
+                <div class="menu-items">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="portfolio.html">My Work</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#">Classes</a></li>
+                  <li><a href="#">Beauty Tips</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </header>
+    </div>
+
     <main class="home">
       <section class="hero">
         <div>
@@ -617,7 +680,7 @@
         </p>
         <div class="contact__form-wrapper">
           <h3>Services</h3>
-          <form>
+          <form id="form" method="POST">
             <div class="form-control">
               <label class="form-label">Event Type</label>
               <div class="form-cols-3">
@@ -666,13 +729,19 @@
               <div class="form-control">
                 <label for="eventDate" class="form-label">Event Date</label>
                 <input
-                  type="date"
+                  type="text"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
                   name="eventDate"
                   id="eventDate"
                   placeholder="Select Date"
                 />
                 <div class="form-checkbox">
-                  <input type="checkbox" id="notDecided" name="notDecided" />
+                  <input
+                    type="checkbox"
+                    id="notDecided"
+                    name="dateNotDecided"
+                  />
                   <label for="notDecided">Not Decided</label>
                 </div>
               </div>
@@ -704,33 +773,61 @@
             <div class="form-control">
               <label class="form-label">Contact</label>
               <div class="form-radio">
-                <input type="radio" name="contact" id="call" value="call" />
+                <input
+                  type="radio"
+                  name="preferredMethod"
+                  id="call"
+                  value="call"
+                />
                 <label for="call">Call</label>
                 <div class="form-control">
-                  <input type="text" value="" />
+                  <input
+                    type="text"
+                    value=""
+                    name="phone"
+                    placeholder="Your phone number"
+                  />
                 </div>
               </div>
               <div class="form-radio">
                 <input
                   type="radio"
-                  name="contact"
+                  name="preferredMethod"
                   id="whatsapp"
                   value="whatsapp"
                 />
                 <label for="whatsapp">Whatsapp</label>
                 <div class="form-control">
-                  <input type="text" />
+                  <input
+                    type="text"
+                    name="whatsapp"
+                    placeholder="Your Whatsapp number"
+                  />
                 </div>
               </div>
               <div class="form-radio">
-                <input type="radio" name="contact" id="sms" value="sms" />
+                <input
+                  type="radio"
+                  name="preferredMethod"
+                  id="sms"
+                  value="sms"
+                />
                 <label for="sms">SMS</label>
                 <div class="form-control">
-                  <input type="text" />
+                  <input
+                    type="text"
+                    name="sms"
+                    placeholder="Your phone number"
+                  />
                 </div>
               </div>
               <div class="form-radio">
-                <input type="radio" name="contact" id="email" />
+                <input
+                  type="radio"
+                  name="preferredMethod"
+                  id="email"
+                  value="email"
+                />
                 <label for="email">Email</label>
                 <div class="form-control">
                   <input type="email" name="email" placeholder="Your Email" />
@@ -753,12 +850,46 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="box-footer">
+        <img src="assets/images/logo.svg" class="logo-footer" />
+        <span>Expert makeup and hairstyle studio</span>
+        <div class="icons-footer">
+          <img src="assets/icons/phone.svg" class="phone-footer" />
+          <img src="assets/icons/whatsapp.svg" class="whatsapp-footer" />
+          <img src="assets/icons/insta-footer.svg" class="insta-footer" />
+        </div>
+        <div class="links-footer">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">My Work</a>
+          <a href="services.html">Services</a>
+          <a href="">Classes</a>
+          <a href="">Beauty Tips</a>
+          <a href="about.html">About</a>
+          <a href="">Contact</a>
+        </div>
+        <span class="copyright">Copyright 2024, Carla Beauty</span>
+      </div>
+    </footer>
+
+    <script src="/Js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "CtqtLcQUULoVeQ1k5",
+        });
+      })();
+    </script>
 
     <script>
       $(document).ready(function () {
@@ -788,6 +919,66 @@
           $("#videoModal").modal({
             fadeDuration: 500,
           });
+        });
+
+        $("form").on("submit", function (e) {
+          e.preventDefault();
+
+          $("form").attr("inert", "");
+          $('button[type="submit"]').html(`
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><script xmlns="" type="text/javascript"/><style>.spinner_ajPY{transform-origin:center;animation:spinner_AtaB .75s infinite linear}@keyframes spinner_AtaB{100%{transform:rotate(360deg)}}</style><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z" class="spinner_ajPY"/><script xmlns=""/></svg>
+          `);
+
+          const values = $("form").serializeArray();
+          let formValues = {};
+          $.each(values, function (i, field) {
+            formValues[field.name] = field.value;
+          });
+
+          const dateNoteDecided = $('input[name="dateNotDecided"]').is(
+            ":checked"
+          );
+          const timeNoteDecided = $('input[name="timeNotDecided"]').is(
+            ":checked"
+          );
+
+          console.log({
+            dateNoteDecided,
+            timeNoteDecided,
+          });
+
+          const emailParams = {
+            from_name: "Team 405",
+            name: $('input[name="name"]').val(),
+            email: $('input[name="email"]').val(),
+            eventType: $('input[name="eventType"]').val(),
+            eventDate: dateNoteDecided
+              ? "Date not decided"
+              : $('input[name="eventDate"]').val(),
+            eventTime: timeNoteDecided
+              ? "Time not decided"
+              : $('input[name="eventTime"]').val(),
+            preferredMethod: $('input[name="preferredMethod"]:checked').val(),
+            whatsapp: $('input[name="whatsapp"]').val(),
+            mobile: $('input[name="phone"]').val(),
+            sms: $('input[name="sms"]').val(),
+          };
+
+          console.log(emailParams);
+
+          emailjs.send("service_6h1gokw", "template_ou77nx6", emailParams).then(
+            (response) => {
+              console.log("SUCCESS!", response.status, response.text);
+              $('button[type="submit"]').text("Sent");
+              $("form").attr("inert", "");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              $('button[type="submit"]').text("Try again?");
+            }
+          );
+
+          return;
         });
       });
     </script>

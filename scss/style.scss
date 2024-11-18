@@ -597,3 +597,7 @@ video {
   width: 100%;
   border-radius: 1rem;
 }
+
+.blocker {
+  z-index: 20 !important;
+}
