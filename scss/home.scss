@@ -270,6 +270,9 @@
       color: #725a58;
       padding: 0 2rem;
       margin-bottom: 48px;
+      @media screen and (min-width: 768px) {
+        font-size: 80px;
+      }
       &:after {
         content: "";
         position: absolute;
@@ -286,6 +289,10 @@
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
+        @media screen and (min-width: 768px) {
+          max-width: 437px;
+          margin-bottom: 40px;
+        }
       }
     }
     &__cta {
@@ -300,6 +307,29 @@
       padding-right: 1rem;
       & > * {
         width: 100%;
+        @media screen and (min-width: 768px) {
+          width: 33.33%;
+          max-width: 300px;
+        }
+        &.figure-special {
+          width: 45%;
+          max-width: 388px;
+        }
+      }
+      &.desktop {
+        display: none;
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+        &.desktop {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-between;
+          max-width: 1324px;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
   }
