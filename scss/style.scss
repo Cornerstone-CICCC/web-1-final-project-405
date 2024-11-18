@@ -187,6 +187,10 @@ footer span {
     margin-top: 17px;
 }
 
+.insta-footer{
+  height: 19px;
+}
+
 @media (min-width:960px) {
     footer{
     height: 418px;
@@ -205,6 +209,12 @@ footer span {
     margin: 0;
 }
 
+#header{
+  position: sticky;
+  top: 0;
+  transition: 0.4s;
+}
+
 .container-header{
     background-color: #F8F6F4;
     display: flex;
@@ -213,6 +223,7 @@ footer span {
     align-items: center;
     width: 100vw;
     height: 196px;
+    transition: 0.4s;
 }
 
 .links1{
@@ -228,6 +239,12 @@ footer span {
     width: 126.19px;
     height: 132px;
     margin: 0 27px;
+    transition: 0.4s;
+}
+
+.logo-scroll{
+  display: none;
+  transition: 0.4s;
 }
 
 .links2{
@@ -252,6 +269,7 @@ footer span {
     font-size: 20px;
 }
 
+
 .vertical-line{
     display: inline-block;
     border-left: 1px solid #E3B6B1;
@@ -274,6 +292,13 @@ footer span {
         display: block;
     }
 
+    .insta-mob{
+      position: absolute;
+        margin-left: 100px;
+        margin-top: -13px;
+        height: 37px;
+    }
+    
     .container-header{
         display: none;
     }
@@ -314,9 +339,10 @@ footer span {
       .nav-container {
         display: block;
         position: relative;
-        height: 120px;
+        height: 142px;
         width: 100vw;
         background-color: #F8F6F4;
+        transition: 0.4s;
       }
       
       .nav-container .checkbox {
@@ -394,6 +420,10 @@ footer span {
         height: 100%;
       }
       
+      .logo{
+        transition: 0.4s;
+      }
+
       .insta_space{
         display: flex;
        }
