@@ -188,7 +188,10 @@
               </svg>
             </div>
             <div class="my-work__reviews--slider">
-              <div class="my-work__reviews--slider reviews-slider">
+              <div
+                id="reviewSlider"
+                class="my-work__reviews--slider reviews-slider"
+              >
                 <div class="reviews-slider__slide">
                   <div class="reviews-slider__slide--content">
                     Carla is the best! She made me the night's brightest star!
@@ -196,6 +199,25 @@
                     looked and felt wonderful!!
 
                     <div class="reviews-slider__slide--content-sign">Janny</div>
+                  </div>
+                </div>
+                <div class="reviews-slider__slide">
+                  <div class="reviews-slider__slide--content">
+                    Carla is amazing! She turned me into the star of the night!
+                    She stayed by my side throughout the entire wedding, making
+                    sure I looked and felt incredible!
+                    <div class="reviews-slider__slide--content-sign">Gus</div>
+                  </div>
+                </div>
+                <div class="reviews-slider__slide">
+                  <div class="reviews-slider__slide--content">
+                    Carla was fantastic! She made me shine as the star of the
+                    night! She stayed with me throughout the wedding, ensuring I
+                    always looked and felt amazing!
+
+                    <div class="reviews-slider__slide--content-sign">
+                      Octavia
+                    </div>
                   </div>
                 </div>
               </div>
@@ -636,5 +658,23 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#reviewSlider").slick({
+          autoplay: true,
+          fade: true,
+          nextArrow: "",
+          prevArrow: "",
+          infinite: true,
+        });
+        $(".reviews-slider__controls--prev").on("click", function () {
+          $("#reviewSlider").slick("slickPrev");
+        });
+        $(".reviews-slider__controls--next").on("click", function () {
+          $("#reviewSlider").slick("slickNext");
+        });
+      });
+    </script>
   </body>
 </html>

@@ -265,6 +265,7 @@ figure {
     margin-top: 0rem;
     width: 100%;
     border: 1px solid #e3b6b1;
+    height: 100%;
   }
   figcaption {
     font-family: "Baskervville", serif;
@@ -390,6 +391,8 @@ figure {
     margin-top: -32px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2000;
     &--next,
     &--prev {
       &:hover {
