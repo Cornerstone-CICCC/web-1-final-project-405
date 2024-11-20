@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   transition: 0.4s;
-  z-index: 5;
+  z-index: 500;
 }
 
 .container-header {
@@ -74,16 +74,12 @@
   header {
     position: sticky;
     top: 0;
-    z-index: 99999999999999;
   }
   .Mobile_Responsive-header {
     display: block;
   }
 
   .insta-mob {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: -13px;
     height: 37px;
   }
 
@@ -125,11 +121,13 @@
   }
 
   .nav-container {
-    display: block;
+    display: flex;
     position: relative;
     height: 142px;
-    width: 100vw;
+    width: 100%;
     background-color: #f8f6f4;
+    padding: 1rem;
+    justify-content: space-between;
     transition: 0.4s;
   }
 
@@ -146,16 +144,12 @@
   }
 
   .nav-container .hamburger-lines {
-    display: block;
     height: 26px;
     width: 32px;
-    position: absolute;
-    top: 17px;
-    left: 20px;
-    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .nav-container .hamburger-lines .line {
@@ -221,23 +215,77 @@
     height: 79.16px;
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+  .nav-container .active ~ .menu-items {
     transform: translateX(0);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  .nav-container .active .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  .nav-container .active .hamburger-lines .line2 {
     transform: scaleY(0);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  .nav-container .active .hamburger-lines .line3 {
     transform: rotate(-46deg);
   }
 
-  .nav-container input[type="checkbox"]:checked ~ .logo {
+  .nav-container .active .logo {
     display: none;
+  }
+}
+
+.mobile_menu_overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f6f4;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px;
+  top: 0;
+  left: -100%;
+  transition: all 0.4s ease-in;
+  @media screen and (min-width: 720px) {
+    display: none;
+  }
+  &.active {
+    left: 0;
+  }
+  &--close {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+  &--menu {
+    padding: 0;
+    min-height: 430px;
+    & > * {
+      list-style: none;
+      margin-bottom: 1rem;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: #725a58;
+        font-size: 32px;
+        font-family: "Baskervville", serif;
+      }
+    }
+  }
+  &--footer {
+    &-icons {
+      display: flex;
+      max-width: 120px;
+      margin: auto;
+      justify-content: space-between;
+      margin-bottom: 27px;
+    }
+    &-text {
+      font-size: 14px;
+    }
   }
 }
