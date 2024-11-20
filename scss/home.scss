@@ -384,11 +384,16 @@
       &--item {
         text-align: center;
         margin-bottom: 65px;
+        padding: 1rem;
         @media screen and (min-width: 768px) {
           display: flex;
           justify-content: space-between;
           gap: 1rem;
           text-align: left;
+        }
+        &:hover {
+          background-color: #e3b6b14d;
+          cursor: pointer;
         }
         &-chevron {
           display: none;
@@ -400,6 +405,10 @@
           font-size: 32px;
           margin-bottom: 1rem;
           color: $text-brown;
+          h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
           @media screen and (min-width: 768px) {
             display: flex;
             align-items: flex-start;
