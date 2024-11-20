@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Whisper&family=Zen+Kaku+Gothic+Antique&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+@import "./variables";
 @import "./header.scss";
 
 * {
@@ -286,7 +287,7 @@ figure {
       text-align: left;
       bottom: 10%;
       left: -18.5%;
-      color: #fae9e7;
+      color: $bg-pink;
       &::first-letter {
         color: #b99692;
       }
@@ -336,10 +337,10 @@ figure {
     border: none;
     font-size: 50px;
     width: 100%;
-    color: #fae9e7;
+    color: $bg-pink;
     @media screen and (min-width: 768px) {
       left: -27.5%;
-      color: #fae9e7;
+      color: $bg-pink;
       font-size: 80px;
       &::first-letter {
         color: #b99692;
@@ -480,7 +481,7 @@ figure {
       background-color: #fff;
     }
     &:hover::before {
-      background-color: #fae9e7;
+      background-color: $bg-pink;
     }
   }
 }
@@ -522,7 +523,7 @@ figure {
       border-radius: 50%;
     }
     &:hover::before {
-      background-color: #fae9e7;
+      background-color: $bg-pink;
     }
   }
   & > .form-control {

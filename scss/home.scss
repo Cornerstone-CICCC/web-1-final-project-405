@@ -1,10 +1,11 @@
+@import "./variables";
+
 .home {
-  $padding: 40px 1rem;
   h1 {
     margin-top: 0;
   }
   h2 {
-    color: #725a58;
+    color: $text-brown;
   }
   .hero {
     background-image: url("../assets/images/hero.jpg");
@@ -185,7 +186,7 @@
 
   .my-work {
     padding: 40px 1rem;
-    background-color: #fae9e7;
+    background-color: $bg-pink;
     @media screen and (min-width: 768px) {
       padding: 80px 1rem;
     }
@@ -197,7 +198,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 40px;
-      color: #725a58;
+      color: $text-brown;
       padding: 0 2rem;
       margin-bottom: 48px;
       @media screen and (min-width: 768px) {
@@ -276,7 +277,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 40px;
-      color: #725a58;
+      color: $text-brown;
       padding: 0 2rem;
       margin-bottom: 48px;
       @media screen and (min-width: 768px) {
@@ -345,8 +346,8 @@
 
   .classes {
     .container {
-      padding: $padding;
-      background-color: #fae9e7;
+      padding: $section-padding;
+      background-color: $bg-pink;
       width: 1440px;
       @media screen and (min-width: 768px) {
         padding: 80px 4rem;
@@ -398,7 +399,7 @@
         &-title {
           font-size: 32px;
           margin-bottom: 1rem;
-          color: #725a58;
+          color: $text-brown;
           @media screen and (min-width: 768px) {
             display: flex;
             align-items: flex-start;
@@ -473,7 +474,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 40px;
-      color: #725a58;
+      color: $text-brown;
       padding: 0 2rem;
       margin-bottom: 48px;
       &:after {
@@ -571,7 +572,7 @@
   }
 
   .contact {
-    padding: $padding;
+    padding: $section-padding;
     @media screen and (min-width: 768px) {
       padding: 80px 1rem;
     }
@@ -579,7 +580,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 40px;
-      color: #725a58;
+      color: $text-brown;
       padding: 0 2rem;
       margin-bottom: 1rem;
       letter-spacing: 0.2rem;
@@ -597,7 +598,7 @@
       }
     }
     &__form-wrapper {
-      background-color: #fae9e7;
+      background-color: $bg-pink;
       margin-top: 2rem;
       margin-left: -1rem;
       margin-right: -1rem;

@@ -1,3 +1,5 @@
+@import "./variables";
+
 .container-main {
   display: flex;
   flex-direction: column;
@@ -38,7 +40,7 @@
 }
 
 .content-container {
-  background-color: #fae9e7;
+  background-color: $bg-pink;
 }
 
 .wedding-girl {
