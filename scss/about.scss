@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +36,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #fae9e7;
+  background-color: $bg-pink;
 
   img {
     width: 100%;
@@ -65,7 +67,7 @@
     }
   }
   .btnContainer {
-    background-color: #fae9e7;
+    background-color: $bg-pink;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
